@@ -1,12 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import tailwindcss from '@tailwindcss/vite' // Add this import
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/Portfolio/',
   plugins: [
     vue(),
-    tailwindcss(), // Add this plugin
+    tailwindcss(),
   ],
   resolve: {
     alias: {

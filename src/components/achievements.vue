@@ -62,8 +62,8 @@ const goToSlide = (index: number) => {
           <Transition name="fade">
             <div :key="currentIndex" class="absolute inset-0 w-full h-full">
               <img
-                  :src="currentAchievement.image"
-                  :alt="currentAchievement.title"
+                  :src="currentAchievement?.image"
+                  :alt="currentAchievement?.title"
                   class="w-full h-full object-cover opacity-90"
               />
               <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
@@ -71,7 +71,7 @@ const goToSlide = (index: number) => {
               <div class="absolute bottom-6 sm:bottom-10 left-2 right-2 md:left-12 md:right-12 text-center flex justify-center">
                 <div class="bg-black/40 border border-blue-400/20 backdrop-blur-md px-4 py-3 md:px-12 md:py-5 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
                   <span class="text-base sm:text-xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100 tracking-wide drop-shadow-[0_2px_10px_rgba(139,92,246,0.4)]">
-                    {{ currentAchievement.title }}
+                    {{ currentAchievement?.title }}
                   </span>
                 </div>
               </div>
