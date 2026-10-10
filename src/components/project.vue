@@ -61,14 +61,14 @@ const toggleProject = (index: number) => {
         <div
             v-for="(project, index) in projects"
             :key="index"
-            class="bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-2xl overflow-hidden shadow-lg smooth-card hover:border-violet-500/40"
+            class="bg-black/40 backdrop-blur-xl border border-blue-500/20 rounded-2xl overflow-hidden shadow-lg smooth-card hover:border-violet-500/40 active:border-violet-500/40"
         >
           <button
               @click="toggleProject(index)"
               class="w-full flex items-center justify-between p-4 sm:p-6 md:p-8 cursor-pointer focus:outline-none group"
           >
             <div class="flex items-center gap-4 sm:gap-6">
-              <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white group-hover:text-blue-300 transition-colors text-left">
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white group-hover:text-blue-300 group-active:text-blue-300 transition-colors text-left">
                 {{ project.title }}
               </h3>
               <span class="hidden md:inline-flex items-center px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-400/10 border border-blue-400/20 rounded-full">
@@ -78,7 +78,7 @@ const toggleProject = (index: number) => {
             </div>
 
             <div
-                class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 flex items-center justify-center border border-white/5 transition-transform duration-500 ease-[cubic-bezier(0.87,0,0.13,1)] group-hover:bg-blue-600/20 flex-shrink-0"
+                class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 flex items-center justify-center border border-white/5 transition-transform duration-500 ease-[cubic-bezier(0.87,0,0.13,1)] group-hover:bg-blue-600/20 group-active:bg-blue-600/20 flex-shrink-0"
                 :class="project.isOpen ? 'rotate-180 bg-blue-600/40 border-blue-500/50' : ''"
             >
               <svg class="w-5 h-5 sm:w-6 sm:h-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +105,7 @@ const toggleProject = (index: number) => {
                     <img
                         :src="project.image"
                         :alt="project.title"
-                        class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                        class="w-full h-auto object-cover hover:scale-105 active:scale-105 transition-transform duration-700"
                     />
                   </div>
                   <div class="w-full lg:w-2/5 flex flex-col justify-center">

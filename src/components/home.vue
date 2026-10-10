@@ -49,7 +49,7 @@ onUnmounted(() => {
                 v-show="index === currentSlide"
                 :src="slide"
                 alt="Karla Tattao Showcase"
-                class="absolute inset-0 w-full h-full object-cover grayscale-15 group-hover:grayscale-0 transition-all duration-700 ease-out"
+                class="absolute inset-0 w-full h-full object-cover grayscale-15 group-hover:grayscale-0 group-active:grayscale-0 transition-all duration-700 ease-out"
             />
           </transition-group>
         </div>
@@ -71,7 +71,7 @@ onUnmounted(() => {
 
         <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-white tracking-tight leading-[1.1] mb-6">
           <span class="block text-white/90 mb-2">Hi, I'm</span>
-          <span class="block bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-violet-400 to-blue-400 bg-size-[200%_auto] transition-all duration-500 hover:animate-text-gradient cursor-default drop-shadow-sm">
+          <span class="block bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-violet-400 to-blue-400 bg-size-[200%_auto] transition-all duration-500 hover:animate-text-gradient active:animate-text-gradient cursor-default drop-shadow-sm">
              Karla Tattao
           </span>
         </h1>
@@ -81,12 +81,12 @@ onUnmounted(() => {
         </p>
 
         <a
-            href="/karla-tattao-cv.pdf"
+            href="/Portfolio/Karla%20Beatriz%20T.%20Tattao%20CV.pdf"
             download="Karla_Tattao_CV.pdf"
-            class="relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold text-sm tracking-wide hover:bg-blue-500 hover:text-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] group"
+            class="relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold text-sm tracking-wide hover:bg-blue-500 active:bg-blue-500 hover:text-white active:text-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] active:shadow-[0_0_30px_rgba(255,255,255,0.3)] group"
         >
           <span>Download CV</span>
-          <svg class="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="w-5 h-5 group-hover:translate-y-1 group-active:translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
         </a>
@@ -109,7 +109,8 @@ onUnmounted(() => {
   0% { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }
 }
-.hover\:animate-text-gradient:hover {
+.hover\:animate-text-gradient:hover,
+.active\:animate-text-gradient:active {
   animation: text-gradient 2s linear infinite;
 }
 </style>

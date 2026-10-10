@@ -15,7 +15,7 @@
         </div>
 
         <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-10">
-          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-6 lg:mt-0">
+          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] active:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-6 lg:mt-0">
             <div class="absolute -top-8 left-6 w-36 xl:w-44 h-8 bg-white border-t-2 border-x-2 border-violet-400 rounded-t-2xl z-0 transition-colors duration-300"></div>
             <div class="absolute top-0.5 left-6.5 w-35 xl:w-43 h-1 bg-white z-10 transition-colors duration-300"></div>
 
@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-8 lg:mt-0">
+          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] active:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-8 lg:mt-0">
             <div class="absolute -top-8 left-6 w-36 xl:w-44 h-8 bg-white border-t-2 border-x-2 border-violet-400 rounded-t-2xl z-0 transition-colors duration-300"></div>
             <div class="absolute top-0.5 left-6.5 w-35 xl:w-43 h-1 bg-white z-10 transition-colors duration-300"></div>
 
@@ -61,7 +61,7 @@
             </div>
           </div>
 
-          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-8 lg:mt-0">
+          <div class="group relative bg-white border-2 border-violet-400 rounded-3xl p-6 xl:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.5)] smooth-card hover:shadow-[0_25px_50px_rgba(139,92,246,0.3)] active:shadow-[0_25px_50px_rgba(139,92,246,0.3)] flex flex-col justify-between mt-8 lg:mt-0">
             <div class="absolute -top-8 left-6 w-36 xl:w-44 h-8 bg-white border-t-2 border-x-2 border-violet-400 rounded-t-2xl z-0 transition-colors duration-300"></div>
             <div class="absolute top-0.5 left-6.5 w-35 xl:w-43 h-1 bg-white z-10 transition-colors duration-300"></div>
 

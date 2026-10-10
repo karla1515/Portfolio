@@ -71,7 +71,7 @@ const skills = [
         <div
             v-for="(skill, index) in skills"
             :key="index"
-            class="bg-[#111827]/80 backdrop-blur-md p-6 rounded-2xl border border-violet-500/20 hover:border-violet-500/60 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.25)] smooth-card flex flex-col group relative overflow-hidden"
+            class="bg-[#111827]/80 backdrop-blur-md p-6 rounded-2xl border border-violet-500/20 hover:border-violet-500/60 active:border-violet-500/60 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.25)] active:shadow-[0_0_30px_-5px_rgba(139,92,246,0.25)] smooth-card flex flex-col group relative overflow-hidden"
         >
           <div class="flex justify-between items-start mb-6">
             <div class="p-3 rounded-xl border border-white/5 shadow-sm" :class="skill.iconBg">

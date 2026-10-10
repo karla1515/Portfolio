@@ -80,7 +80,7 @@ const goToSlide = (index: number) => {
 
           <button
               @click="prevSlide"
-              class="absolute left-2 sm:left-6 md:left-10 top-1/2 -translate-y-1/2 p-2 sm:p-4 md:p-5 rounded-full bg-black/50 text-white hover:bg-blue-600 hover:scale-110 border border-blue-400/20 backdrop-blur-md transition-all shadow-xl z-20"
+              class="absolute left-2 sm:left-6 md:left-10 top-1/2 -translate-y-1/2 p-2 sm:p-4 md:p-5 rounded-full bg-black/50 text-white hover:bg-blue-600 active:bg-blue-600 hover:scale-110 active:scale-110 border border-blue-400/20 backdrop-blur-md transition-all shadow-xl z-20"
               aria-label="Previous Achievement"
           >
             <svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
@@ -88,7 +88,7 @@ const goToSlide = (index: number) => {
 
           <button
               @click="nextSlide"
-              class="absolute right-2 sm:right-6 md:right-10 top-1/2 -translate-y-1/2 p-2 sm:p-4 md:p-5 rounded-full bg-black/50 text-white hover:bg-blue-600 hover:scale-110 border border-blue-400/20 backdrop-blur-md transition-all shadow-xl z-20"
+              class="absolute right-2 sm:right-6 md:right-10 top-1/2 -translate-y-1/2 p-2 sm:p-4 md:p-5 rounded-full bg-black/50 text-white hover:bg-blue-600 active:bg-blue-600 hover:scale-110 active:scale-110 border border-blue-400/20 backdrop-blur-md transition-all shadow-xl z-20"
               aria-label="Next Achievement"
           >
             <svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
@@ -101,7 +101,7 @@ const goToSlide = (index: number) => {
               :key="index"
               @click="goToSlide(index)"
               class="transition-all duration-300 rounded-full"
-              :class="currentIndex === index ? 'w-10 sm:w-12 h-2.5 sm:h-3.5 bg-linear-to-r from-blue-500 to-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.8)]' : 'w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 bg-slate-700/60 hover:bg-blue-400/60'"
+              :class="currentIndex === index ? 'w-10 sm:w-12 h-2.5 sm:h-3.5 bg-linear-to-r from-blue-500 to-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.8)]' : 'w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 bg-slate-700/60 hover:bg-blue-400/60 active:bg-blue-400/60'"
               :aria-label="`Go to slide ${index + 1}`"
           ></button>
         </div>
