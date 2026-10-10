@@ -81,7 +81,7 @@ onUnmounted(() => {
         </p>
 
         <a
-            href="/Portfolio/Karla%20Beatriz%20T.%20Tattao%20CV.pdf"
+            href="/Portfolio/karla-tattao-cv.pdf"
             download="Karla_Tattao_CV.pdf"
             class="relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold text-sm tracking-wide hover:bg-blue-500 active:bg-blue-500 hover:text-white active:text-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] active:shadow-[0_0_30px_rgba(255,255,255,0.3)] group"
         >
